@@ -1,9 +1,9 @@
-
 const argument = process.argv[2];
 
+// Attempt to convert the argument to an integer
 const numberOfOccurrences = parseInt(argument);
 
-if (isNaN(numberOfOccurrences)) {
+if (isNaN(numberOfOccurrences) || numberOfOccurrences <= 0) {
     console.log("Missing number of occurrences");
 } else {
     let outputString = "";
